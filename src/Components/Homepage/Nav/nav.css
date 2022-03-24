@@ -22,9 +22,33 @@ nav{
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    padding: 8px 15px;
+    padding: 6px 12px;
 }
 nav ul li a{
     color: black;
     font-weight: bold;
+    transition: var(--transition);
+}
+
+nav ul li a:hover{
+    color: var(--color-bg-2);
+}
+button{
+    border: none;
+    background: var(--color-bg-2);
+    color: white;
+    height: 50px;
+    padding: 12px 30px;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-top: 2px;
+    font-size: 18px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+
+}
+button:hover{
+    background: var(--color-bg-2-hover);
 }
