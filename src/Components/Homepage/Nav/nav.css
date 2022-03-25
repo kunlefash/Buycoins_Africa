@@ -52,3 +52,43 @@ button {
 button:hover{
     background-color: var(--color-bg-2-hover);
 }
+
+.menu_icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 800px) {
+
+    .menu_icon{
+        display: block;
+}
+
+    .nav_links {
+        width: 100%;
+        background: var(--color-bg);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+
+    }
+    
+    
+    .nav_links li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .nav_links li a{
+        color: black;
+        transition: var(--transition);
+    }
+    .nav_links li a:hover{
+        color: var(--color-bg-2);
+    }
+
+}
