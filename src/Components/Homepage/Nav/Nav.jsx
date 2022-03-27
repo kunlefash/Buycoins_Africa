@@ -3,6 +3,12 @@ import "./nav.css"
 import {AiOutlineMenu} from "react-icons/ai"
 
 function Nav()  {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  window.onscroll  = () => {
+    setIsScrolled(window.pageYOffset === 0 ? false : true);
+    return () => (window.onscroll = null);
+};
   const [toggle, setToggle] = useState(false)
   const navRef = useRef()
 
@@ -25,22 +31,22 @@ function Nav()  {
   }, [toggle])
 
   return (
-    <header>
-      <img className='logo' src="" alt="logo" />
-      <nav>
-        <ul ref={navRef} id='menuList' className='nav_links'>
-          <li><a href="#">Buycoin Pro</a></li>
-          <li><a href="#Products">Products</a></li>
-          <li><a href="#Learn">Learn</a></li>
-          <li><a href="#Company">Company</a></li>
-          <li><a href="#Signin">Sign In</a></li>
-          <a className='cta'  href="#"><button>Get Started</button></a>
-        </ul>
-      </nav>
-      <AiOutlineMenu className='menu_icon' onClick={handleToggler}/>
-
-    </header>
-
+      <header className= {isScrolled ? "nav scrolled" : "nav"}>
+        <img className='logo' src="" alt="logo" />
+        <div className='container_header'>
+        <nav>
+          <ul ref={navRef} id='menuList' className='nav_links'>
+            <li><a href="#">Buycoin Pro</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#Learn">Learn</a></li>
+            <li><a href="#Company">Company</a></li>
+            <li><a href="#Signin">Sign In</a></li>
+            <a className='cta'  href="#"><button className='button_nav'>Get Started</button></a>
+          </ul>
+        </nav>
+        <AiOutlineMenu className='menu_icon' onClick={handleToggler}/>
+        </div>
+      </header>
   )
 }
 
