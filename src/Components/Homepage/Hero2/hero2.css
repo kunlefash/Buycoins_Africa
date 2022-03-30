@@ -1,0 +1,45 @@
+.hero_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.h2-hero2{
+    margin-top: 6rem;
+    margin-left: 15rem;
+    font-weight: 900;
+
+}
+.h4-hero2{
+    margin-left: 15rem;
+    color: rgba(0,0,0,0.8);
+
+}
+
+.img_right{
+    height: 30rem;
+    width: 18rem;
+    margin-left: 2rem;
+    cursor: pointer;
+
+}
+
+.button_hero2{
+    padding: 9px 25px;
+    background-color: var(--color-bg-2);
+    border: none;
+    color: white;
+    height: 4rem;
+    width: 12rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-left: 16rem;
+
+    
+}
+.button_hero2:hover{
+    background-color: var(--color-bg-2-hover);
+}

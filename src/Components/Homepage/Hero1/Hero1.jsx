@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./hero1.css"
 const Hero = () => {
   return (
@@ -12,5 +12,7 @@ const Hero = () => {
     </section>
   )
 }
+
+
 
 export default Hero

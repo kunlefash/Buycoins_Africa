@@ -9,6 +9,7 @@ h1{
 
 }
 
+/* Creating a flexbox container for the h4 element. */
 h4{
     display: flex;
     align-items: center;
@@ -25,6 +26,7 @@ h4{
     
 }
 
+/* The CSS code for the button in the hero1 section. */
 .button_hero1{
     padding: 9px 25px;
     background-color: var(--color-bg-2);
