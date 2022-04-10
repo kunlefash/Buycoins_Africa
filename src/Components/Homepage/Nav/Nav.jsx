@@ -27,7 +27,6 @@ function Nav()  {
       navRef.current.style.top = '-300px'
       navRef.current.style.transition = '.4s top'
     }
-      
   }, [toggle])
 
   return (
