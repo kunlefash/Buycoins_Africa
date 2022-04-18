@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import "./nav.css"
 import {AiOutlineMenu} from "react-icons/ai"
 
+
 function Nav()  {
   const [isScrolled, setIsScrolled] = useState(false);
 
